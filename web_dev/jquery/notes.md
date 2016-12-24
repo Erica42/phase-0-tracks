@@ -9,12 +9,5 @@ google "most common jQuery" and follow the rabbit hole
 find something to test the jQuery in
 break after every 30 minutes for 5 minutes
 
+Going through the http://www.w3schools.com/jquery/jquery_get_started.asp and answering the test questions has been really helpful.
 
-$(document).ready(function(){
-
-   // jQuery methods go here...
-
-});
-This also allows you to have your JavaScript code before the body of your document, in the head section.
-All selectors in jQuery start with the dollar sign and parentheses: $().
-http://www.w3schools.com/jquery/jquery_selectors.asp
