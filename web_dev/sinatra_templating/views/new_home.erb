@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+  <p>Welcome to the student management system.</p>
+  <p>Click <a href="students/new">here</a> to create a new student.</p>
+  <p>Click <a href="campuses/new">here</a> to create a new campus.</p>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Campus</th>
+      <th>Age</th>
+    </tr>
+    <% @students.each do |student| %>
+    <tr>
+      <td><%= student['name'] %></td>
+      <td><%= student['campus'] %></td>
+      <td><%= student['age'] %></td>
+    </tr>
+    <% end %>
+  </table>
+  <ul>
+    <% @campuses.each do |city| %>
+      <li><%= city['city'] %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
